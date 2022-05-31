@@ -8,33 +8,41 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1><strong>Apple Packet Price Planner</strong></h1>
-    <h3>Apple Buy Data</h3>
-    <form>
+    <h1 class="heading"><strong>Apple Packet Price Planner</strong></h1>
+
+    <div class="firstSec">
+        <h3>Apple Buy Data</h3>
+      <form class="buyingD">
         <label for="boxPrice">Cost price for a box of Apples.</label>
-        <input type="text" id="boxPrice" name="boxPrice">
+        <input class="one" type="text" id="boxPrice" name="boxPrice"><br>
+        
         <label for="appleAmount">Number of Apples in the box.</label>
-        <input type="text" id="appleAmount" name="appleAmount">
+        <input class="two" type="text" id="appleAmount" name="appleAmount"><br>
+        
         <label for="soldPacketPrice">The packet size apples are sold in.</label>
-        <input type="text" id="soldPacketPrice" name="soldPacketPrice">
+        <input class="three" type="text" id="soldPacketPrice" name="soldPacketPrice"><br>
+        
         <label for="requiredP">Required profit</label>
-        <input type="text" id="requiredP" name="requiredP">
-        <button>Calculate</button>
+        <input class="four" type="text" id="requiredP" name="requiredP"><br>
+        
+        <button class="calB">Calculate</button>
       </form>
+    </div>
+    <div class="secSet">
+        <h3>Apple Price Calculations</h3>
 
-      <h3>Apple Price Calculations</h3>
+        <form class="calculationP">
+          <label for="totPackets">Number of packets.</label>
+          <input class="five" type="text" id="totPackets" name="totPackets"><br>
+          <label for="appleCost">Cost price per Apple.</label>
+          <input class="six" type="text" id="appleCost" name="appleCost"><br>
+          <label for="packetPrice">Cost price per packets.</label>
+          <input class="seven" type="text" id="packetPrice" name="packetPrice"><br>
+          <label for="recommendedP">Recommended packet price</label>
+          <input type="text" id="recommendedP" name="recommendedP"><br>
+        </form>
 
-      <form>
-        <label for="totPackets">Number of packets.</label>
-        <input type="text" id="totPackets" name="totPackets">
-        <label for="appleCost">Cost price per Apple.</label>
-        <input type="text" id="appleCost" name="appleCost">
-        <label for="packetPrice">Cost price per packets.</label>
-        <input type="text" id="packetPrice" name="packetPrice">
-        <label for="recommendedP">Recommended packet price</label>
-        <input type="text" id="recommendedP" name="recommendedP">
-        <button>Calculate</button>
-      </form>
+    </div>
     
 </body>
 </html>
